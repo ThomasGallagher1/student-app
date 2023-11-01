@@ -1,17 +1,18 @@
 package ie.atu;
 
+import java.util.Scanner;
+
 public class Person {
     private String name;
     private String email;
     private String course;
 
-    public StudentApp(String name, String email, String course)
+    public Person(){}
+
+    public Person(String name)
     {
         this.name = name;
-        this.email = email;
-        this.course = course;
     }
-
     public String getName() {
         return name;
     }
@@ -34,5 +35,12 @@ public class Person {
 
     public void setCourse(String course) {
         this.course = course;
+    }
+
+    public void printDetails()
+    {
+        System.out.println("\nName: " + name);
+        System.out.println("\nEmail: " + email);
+        System.out.println("\nCourse: " + course);
     }
 }
