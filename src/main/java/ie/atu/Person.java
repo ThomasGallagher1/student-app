@@ -5,6 +5,13 @@ public class Person {
     private String email;
     private String course;
 
+    public StudentApp(String name, String email, String course)
+    {
+        this.name = name;
+        this.email = email;
+        this.course = course;
+    }
+
     public String getName() {
         return name;
     }
